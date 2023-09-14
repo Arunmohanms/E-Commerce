@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: beige;
+    /* background-color: rgb(73, 176, 145);*/
+    box-shadow: 1px 1px 1px rgb(128, 123, 123);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: 1.3rem;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: red;
+}
+
+/*Home Page*/
+
+#cover {
+    background-image: url("img/covergirl.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 40% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 150px;
+    padding-left: 80px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 5rem;
+    color: rgb(61, 167, 228);
+}
+
+h5 {
+    line-height: 2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 54, 87);
+}
+
+#cover button {
+    position: relative;
+    left: 60px;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(73, 176, 145);
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Feature Boxes*/
+.section-p {
+    padding: 40px 80px;
+}
+
+.section-m {
+    margin: 40px 0;
+}
+
+.boxes img {
+    width: 180px;
+    height: 180px;
+}
+
+#features .boxes {
+    width: 230px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.1);
+    border: 2px solid rgb(73, 176, 145);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#features .boxes:hover {
+    background-color: rgb(192, 210, 205);
+    box-shadow: 50px 50px 50px 50px rgb(0, 0, 0, 0.04);
+}
+
+#features .boxes img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#features .boxes h6 {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#features .boxes:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#features .boxes:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#features .boxes:nth-child(4) h6 {
+    background-color: #fff2e5;
+}
+
+/*Products*/
+#products h2,
+p {
+    text-align: center;
+    line-height: 0.1;
+    padding-bottom: 60px;
+}
+
+.product-container #e-products {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.08);
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(60, 59, 59);
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 18.7px;
+}
+
+.product-container #e-products:hover {
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.28);
+}
+
+#andiphone {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("img/beautiful-shot-stars-night-sky.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#banner h2 {
+    padding: 10px 0;
+    font-size: 3rem;
+}
+
+#banner h2 span {
+    color: red;
+}
+
+#banner button {
+    font-size: 25px;
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 9px;
+    color: #088178;
+    background-color: white;
+    justify-content: center;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: white;
+}
